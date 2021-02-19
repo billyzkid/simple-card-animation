@@ -1,0 +1,41 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#deal-button {
+    margin: 10px;
+}
+
+#path {
+    height: 200vh;
+    position: absolute;
+    bottom: -120vh;
+    left: 50%;
+}
+
+#card {
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    margin: 0 0 0 -50px;
+    /* background-image: url('images/cards/back.png'); */
+    background-color: rgb(255, 255, 255);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    box-shadow: 21px 21px 14px -9px rgba(0,0,0,1);
+    transform: translateY(100vh) scale(1.5);
+}
+
+#card.dealt {
+    transition: all 1s ease-in-out;
+    box-shadow: 8px 8px 14px -9px rgba(0,0,0,1);
+    transform: translateY(10vh) scale(1);
+}
